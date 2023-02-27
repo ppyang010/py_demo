@@ -19,7 +19,10 @@ with open("./student_course_grade_input.txt", encoding="utf-8") as fIn:
         course_grades[course].append(int(grade))
 
 print(course_grades)
+print(course_grades.items())
 
+# 循环字段
+# .items() 因为是 kv结构的元组 数组
 for course, grades in course_grades.items():
     print(
         course,
