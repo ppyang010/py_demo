@@ -4,6 +4,7 @@ def compute_score():
     with open("./student_grade_input.txt", "r", encoding="utf-8") as fIn:
         scores = []
         for line in fIn:
+            # tup[1:4] 截取元素，从第二个开始到第四个元素（索引为 3）。
             line = line[:-1]
             fields = line.split(",")
             scores.append(int(fields[-1]))
