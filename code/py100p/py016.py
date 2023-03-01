@@ -12,7 +12,7 @@
 import os
 import shutil
 
-dir = "../arrange_dir"
+dir = "arrange_dir"
 
 for file in os.listdir(dir):
     ext = os.path.splitext(file)[1]
