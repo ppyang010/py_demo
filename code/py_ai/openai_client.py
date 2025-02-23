@@ -19,7 +19,7 @@ class OpenAIClient:
         self.client = openai.OpenAI(
             api_key=api_key,
             base_url=base_url,
-            organization=organization
+            organization=None
         )
 
     def chat_completion(
